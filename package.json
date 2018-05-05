@@ -1,18 +1,36 @@
 {
   "name": "fully-typed-actions",
   "version": "0.2.0",
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "devDependencies": {
-    "type-scripts": "1.2.0",
-    "typescript": "^2.8.3"
+    "typescript": "^2.8.3",
+    "del-cli": "^1.1.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "rxjs": "^6.1.0"
+  },
   "peerDependencies": {
     "rxjs": "^6.1.0"
   },
   "scripts": {
-    "build": "type-scripts-build",
+    "build": "del dist && tsc",
     "prepublishOnly": "yarn  build"
-  }
+  },
+  "author": "Michael Gustmann",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BeaveArony/fully-typed-actions.git"
+  },
+  "keywords": [
+    "redux",
+    "typescript",
+    "actions",
+    "ngrx",
+    "redux-observable",
+    "Epic",
+    "typesafe",
+    "action-creator"
+  ],
+  "license": "MIT"
 }
