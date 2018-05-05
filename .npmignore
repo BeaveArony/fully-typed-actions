@@ -1,2 +1,5 @@
-node_modules
-src
+src/
+config/
+node_modules/
+tsconfig.json
+*.txt
