@@ -1,11 +1,11 @@
 {
   "name": "fully-typed-actions",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "devDependencies": {
-    "typescript": "^2.8.3",
-    "del-cli": "^1.1.0"
+    "del-cli": "^1.1.0",
+    "typescript": "^2.8.3"
   },
   "dependencies": {
     "rxjs": "^6.1.0"
